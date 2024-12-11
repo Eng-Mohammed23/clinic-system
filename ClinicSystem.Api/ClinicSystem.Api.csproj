@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>6a0d839e-171b-4e4c-8a94-166d40904750</UserSecretsId>
+  </PropertyGroup>
+  <!--<ItemGroup>
+		-->
+  <!-- Removes the DLL from being included in the build output -->
+  <!--
+		<None Update="libwkhtmltox.dll">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>-->
+  <ItemGroup>
+    <PackageReference Include="DinkToPdf" />
+    <PackageReference Include="DinkToPdfCopyDependencies" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Include="Hangfire.AspNetCore" />
+    <PackageReference Include="Hangfire.Core" />
+    <PackageReference Include="Hangfire.Dashboard.Authorization" />
+    <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" />
+    <PackageReference Include="Hangfire.SqlServer" />
+    <PackageReference Include="MailKit" />
+    <PackageReference Include="Mapster" />
+    <PackageReference Include="Mapster.DependencyInjection" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <PackageReference Include="Stripe.net" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="WhatsAppCloudApi" />
+    <!-- Embeds the wkhtmltox DLL so it's included in the output -->
+    <!--<EmbeddedResource Include="libwkhtmltox.dll">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>-->
+  </ItemGroup>
+</Project>
